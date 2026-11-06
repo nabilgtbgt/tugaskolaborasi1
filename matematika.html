@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Pembelajaran & Tugas</title>
+    <!-- Menghubungkan ke file matematika.css -->
+    <link rel="stylesheet" href="matematika.css">
+</head>
+<body>
+
+    <!-- Navigasi Header Kanan -->
+    <div class="header-wrapper">
+        <nav class="nav-container">
+            <a href="#">Home</a>
+            <a href="#" class="active">Topik</a>
+            <a href="#">Tentang</a>
+            <a href="#">Kontak</a>
+        </nav>
+    </div>
+
+    <!-- Kontainer Utama Halaman -->
+    <div class="main-wrapper">
+
+        <!-- KARTU 1: Analisis 3 Materi Matematika (SPLDV) -->
+        <div class="main-card">
+            <!-- Tombol Tab 3 Materi -->
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab(0)">Materi 1: Smart Trash</button>
+                <button class="tab-btn" onclick="switchTab(1)">Materi 2: Robot & Rak</button>
+                <button class="tab-btn" onclick="switchTab(2)">Materi 3: Dekorasi Meja</button>
+            </div>
+
+            <!-- Content Materi 1 -->
+            <div class="content materi1 active">
+                <h2>Smart Trash Bin & Desk Lamp</h2>
+                <div class="image-container">
+                    <img class="poster-img" src="matematika alita.jpeg" alt="Poster 1">
+                </div>
+                
+                <div class="package-grid">
+                    <div class="package-card">
+                        <div class="package-title">Paket 1</div>
+                        <div class="package-detail">2 Smart Trash Bin<br>+ 1 Desk Lamp</div>
+                        <div class="package-price">Rp 590.000</div>
+                    </div>
+                    <div class="package-card">
+                        <div class="package-title">Paket 2</div>
+                        <div class="package-detail">1 Smart Trash Bin<br>+ 2 Desk Lamp</div>
+                        <div class="package-price">Rp 430.000</div>
+                    </div>
+                </div>
+                  
+
+
+                <div class="section-title">Model Matematika (SPLDV)</div>
+                <div class="math-box">2x + y = 590.000 (Paket 1)</div>
+                <div class="math-box">x + 2y = 430.000 (Paket 2)</div>
+                <div class="section-title">Bentuk Penyelesaian</div>
+                <div class="math-box">eliminasi y untuk  memperoleh nilai X </div>
+                <p> 1.2x+y=590.000
+                      x+2y=430.000
+                <br>2.Persamaan 1 - persamaan 2
+                <br>3.Jadi hasilnya yaitu x=250.000
+                </p>
+
+                <br>
+
+                <div class="math-box">Subsitusi</div>
+                <p>
+                    x+2y=430.000
+                 <br> 250.000+2y=430.000
+                <br>2y=430.000-250.000
+                 <br>2y=180.000
+                 <br> y=180.000/2
+                 <br>  y=90.000
+                </p>
+                <div class="result-card">
+                    <h3>Hasil Perhitungan Harga Satuan:</h3>
+                    <div class="result-item">
+                        <span>1 Smart Trash Bin (x):</span>
+                        <strong>Rp 250.000</strong>
+                    </div>
+                    <div class="result-item">
+                        <span>1 Desk Lamp (y):</span>
+                        <strong>Rp 90.000</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Materi 2 -->
+            <div class="content materi2">
+                <h2>Robot & Rak Buku</h2>
+                <div class="image-container">
+                    <img class="poster-img" src="matematika okta.jpeg" alt="Poster 2">
+                </div>
+                
+                <div class="package-grid">
+                    <div class="package-card">
+                        <div class="package-title">Paket 1</div>
+                        <div class="package-detail">1 Robot<br>+ 2 Rak Buku</div>
+                        <div class="package-price">Rp 290.000</div>
+                    </div>
+                    <div class="package-card">
+                        <div class="package-title">Paket 2</div>
+                        <div class="package-detail">2 Robot<br>+ 1 Rak Buku</div>
+                        <div class="package-price">Rp 295.000</div>
+                    </div>
+                </div>
+                 
+                
+
+
+                <div class="section-title">Model Matematika (SPLDV)</div>
+                <div class="math-box">x+ 2y = 290.000 (Paket 1)</div>
+                <div class="math-box">2x + y = 295.000 (Paket 2)</div>
+                    <div class="section-title">Bentuk Penyelesaian</div>
+                <div class="math-box">eliminasi y untuk  memperoleh nilai X </div>
+                <p> 1.x+2y=290.000
+                      2x+y=295.000                      
+                <br>2.Persamaan 1 - persamaan 2
+                <br>3.Jadi hasilnya yaitu x=100.000
+                </p>
+
+                <br>
+
+                <div class="math-box">Subsitusi</div>
+                <p>
+                    x+2y=290.000
+                 <br> 100.000+2y=290.000
+                <br>2y=290.000-100.000
+                 <br>2y=190.000
+                 <br> y=190.000/2
+                 <br>  y=95.000
+                </p>
+
+                <div class="result-card">
+                    <h3>Hasil Perhitungan Harga Satuan:</h3>
+                    <div class="result-item">
+                        <span>1 Robot (a):</span>
+                        <strong>Rp 100.000</strong>
+                    </div>
+                    <div class="result-item">
+                        <span>1 Rak Buku (b):</span>
+                        <strong>Rp 95.000</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Materi 3 -->
+            <div class="content materi3">
+                <h2>Paket Dekorasi Meja</h2>
+                <div class="image-container">
+                    <img class="poster-img" src="nopal mtk.jpeg" alt="Poster 3">
+                </div>
+                
+                <div class="package-grid">
+                    <div class="package-card">
+                        <div class="package-title">Paket A</div>
+                        <div class="package-detail">1 Hiasan Periferal<br>+ 2 Lampu Motherboard</div>
+                        <div class="package-price">Rp 230.000</div>
+                    </div>
+                    <div class="package-card">
+                        <div class="package-title">Paket B</div>
+                        <div class="package-detail">2 Hiasan Periferal<br>+ 1 Lampu Motherboard</div>
+                        <div class="package-price">Rp 190.000</div>
+                    </div>
+                </div>
+        
+
+
+                <div class="section-title">Model Matematika (SPLDV)</div>
+                <div class="math-box">x + 2y = 230.000 (Paket A)</div>
+                <div class="math-box">2x + y = 190.000 (Paket B)</div>
+                 <div class="section-title">Bentuk Penyelesaian</div>
+                <div class="math-box">eliminasi y untuk  memperoleh nilai X </div>
+                <p> 1.2x+y=280.000
+                      3x+4y=670.000
+                <br>2.Persamaan 1 - persamaan 2
+                <br>3.Jadi hasilnya yaitu x=90.000
+                </p>
+
+                <br>
+
+                <div class="math-box">Subsitusi</div>
+                <p>
+                    2x+y=280.000
+                 <br> 2(90.000)+y=280.000
+                <br>180.000+y=280.000
+                 <br>y=280.000-180.000
+                 <br> y=100.000
+                 
+                </p>
+
+                <div class="result-card">
+                    <h3>Hasil Perhitungan Harga Satuan:</h3>
+                    <div class="result-item">
+                        <span>1 Hiasan Periferal (p):</span>
+                        <strong>Rp 50.000</strong>
+                    </div>
+                    <div class="result-item">
+                        <span>1 Lampu Hias Motherboard (q):</span>
+                        <strong>Rp 90.000</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+        </div>
+
+    </div>
+
+    <!-- Script JavaScript untuk Mengatur Perpindahan Tab -->
+    <script>
+        function switchTab(index) {
+            const tabs = document.querySelectorAll('.tab-btn');
+            const contents = document.querySelectorAll('.content');
+
+            tabs.forEach((tab, i) => {
+                if (i === index) {
+                    tab.classList.add('active');
+                    contents[i].classList.add('active');
+                } else {
+                    tab.classList.remove('active');
+                    contents[i].classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOCYCLE - Sampah Jadi Berkah</title>
+</head>
+<body>
+
+    <!-- Header / Navigasi -->
+    <header>
+        <div class="logo">Sampah Jadi Berkah<span>.</span></div>
+        <div class="nav-pill">
+            <a href="index.html">Home</a>
+            <a href="ipas.html" class="active">Topik</a>
+            <a href="index.html">Tentang</a>
+            <a href="index.html">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Judul Header Topik -->
+    <h1 class="hero-title">ECOCYCLE</h1>
+
+    <!-- Informasi Identitas Sekolah & Proyek -->
+    <div class="meta-box">
+        <div><strong>Sekolah:</strong> SMK Negeri 1 Tengaran</div>
+        <div><strong>Kelas/Jurusan:</strong> X PPLG-2</div>
+        <div><strong>Kelompok:</strong> Kelompok 4</div>
+        <div><strong>Pembimbing:</strong> Bu Siswati</div>
+    </div>
+
+    <!-- Galeri Kartu Produk Satu Baris (Horizontal) -->
+    <div class="gallery-container">
+        
+        <!-- Card 1 -->
+        <div class="card-wrapper">
+            <div class="gallery-card card-1" onclick="showDetails(0, this)">
+                <div class="card-bg-overlay"></div>
+                <div class="card-title">Smart Trash Bin (Casing PC)</div>
+                <link rel="stylesheet" href="ipas.css" />
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-wrapper">
+            <div class="gallery-card card-2" onclick="showDetails(1, this)">
+                <div class="card-bg-overlay"></div>
+                <div class="card-title">Tempat Pensil Keyboard</div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-wrapper">
+            <div class="gallery-card card-3" onclick="showDetails(2, this)">
+                <div class="card-bg-overlay"></div>
+                <div class="card-title">Penyimpanan Kabel Casing</div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card-wrapper">
+            <div class="gallery-card card-4" onclick="showDetails(3, this)">
+                <div class="card-bg-overlay"></div>
+                <div class="card-title">Jam Dinding Motherboard</div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card-wrapper">
+            <div class="gallery-card card-5" onclick="showDetails(4, this)">
+                <div class="card-bg-overlay"></div>
+                <div class="card-title">Hiasan Meja RAM</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Panel Penjelasan Otomatis di Bawah Barisan Foto -->
+    <div class="description-panel" id="descPanel">
+        <h3 id="productTitle">Pilih salah satu produk di atas</h3>
+        <p id="productDesc">Klik pada salah satu foto di barisan atas untuk melihat ulasan lengkap, alat, bahan, langkah pembuatan, dan estimasi biayanya.</p>
+        
+        <div class="detail-grid" id="detailGrid" style="display: none;">
+            <div>
+                <h4>Alat & Bahan</h4>
+                <p><strong>Alat:</strong> <span id="productTools">-</span></p>
+                <p><strong>Bahan:</strong> <span id="productMaterials">-</span></p>
+                <div class="price-badge" id="productPrice">Biaya: - | Harga Jual: -</div>
+            </div>
+            <div>
+                <h4>Langkah-Langkah Pembuatan</h4>
+                <ol id="productSteps"></ol>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const productsData = [
+            {
+                title: "Smart Trash Bin dari Casing PC Bekas",
+                desc: "Smart Trash Bin dari casing PC bekas merupakan produk kreatif yang memanfaatkan limbah elektronik menjadi tempat sampah otomatis menggunakan sensor ultrasonik HC-SR04 dan servo motor berbasis Arduino[cite: 1].",
+                tools: "Obeng, Tang, Bor, Gerinda",
+                materials: "Casing PC bekas, Sensor ultrasonik HC-SR04, Arduino Uno, Servo motor, Kabel jumper, Adaptor, Engsel & baut, Kantong sampah[cite: 1]",
+                cost: "Rp200.000",
+                price: "Rp250.000",
+                steps: [
+                    "Menyiapkan alat dan bahan.",
+                    "Membersihkan casing PC bekas dari debu dan kotoran.",
+                    "Melepas komponen komputer yang tidak diperlukan.",
+                    "Memodifikasi casing agar dapat digunakan sebagai tempat sampah.",
+                    "Memasang engsel pada bagian tutup casing.",
+                    "Memasang sensor ultrasonik pada bagian depan casing.",
+                    "Memasang servo motor untuk menggerakkan tutup tempat sampah.",
+                    "Menghubungkan sensor dan servo motor ke Arduino.",
+                    "Memasukkan program sederhana ke Arduino agar tutup terbuka/tertutup otomati.",
+                    "Melakukan pengujian sensor dan tutup tempat sampah."
+               
+                ]
+            },
+            {
+                title: "Tempat Pensil dari Keyboard Bekas",
+                desc: "Tempat pensil dari keyboard bekas memanfaatkan limbah tombol keyboard yang ditempelkan pada kaleng bekas untuk wadah alat tulis yang unik dan bernilai jual.",
+                tools: "Obeng kecil, Tang, Gunting, Lem tembak",
+                materials: "Keyboard bekas, Kaleng bekas, Lem stik, Kardus bekas, Cat warna",
+                cost: "Rp25.000",
+                price: "Rp40.000.",
+                steps: [
+                    "Menyiapkan alat dan bahan.",
+                    "Membersihkan kaleng bekas yang akan digunakan.",
+                    "Melepas tombol-tombol keyboard bekas menggunakan obeng kecil.",
+                    "Merapikan dan menghaluskan bagian kaleng yang tajam.",
+                    "Menempelkan tombol keyboard pada bagian luar kaleng menggunakan lem.",
+                    "Membuat alas dari kardus bekas agar tempat pensil lebih stabil.",
+                    "Mengecat dan menghias produk sesuai kreativitas.",
+                    "Memeriksa kekuatan lem dan kerapian hasil akhirg."
+                ]
+            },
+            {
+                title: "Tempat Penyimpanan Kabel dari Casing Komputer",
+                desc: "Memanfaatkan casing komputer bekas untuk merapikan kabel USB, charger, dan kabel LAN agar tersusun rapi berdasarkan jenisnya.",
+                tools: "Obeng, Tang, Gunting, Penggaris",
+                materials: "Casing komputer bekas, Sekat kardus bekas, Cat semprot, Karet pengikat kabel, Pelapis bagian tepi",
+                cost: "Rp45.000",
+                price: "Rp65.000",
+                steps: [
+                    "Menyiapkan alat dan bahan.",
+                    "Membersihkan casing komputer bekas dari debu.",
+                    "Memastikan casing tidak memiliki bagian tajam atau berbahaya.",
+                    "Menentukan bagian casing yang digunakan sebagai tempat penyimpanan.",
+                    "Membuat sekat menggunakan kardus bekas.",
+                    "Memasang sekat agar kabel dapat dikelompokkan berdasarkan jenisnya.",
+                    "Mengecat casing agar terlihat lebih menarik.",
+                    "Menambahkan karet pengikat kabel dan memeriksa kerapian."
+                ]
+            },
+            {
+                title: "Jam Dinding dari Limbah Motherboard",
+                desc: "Produk hiasan dinding fungsional yang memanfaatkan motherboard bekas sebagai papan jam bernuansa seni teknologi.",
+                tools: "Obeng, Tang, Gunting, Lem tembak",
+                materials: "Motherboard bekas, Mesin jam dinding, Jarum jam, Baterai AA, Pengait gantung",
+                cost: "Rp40.000 ",
+                price: "Rp75.000",
+                steps: [
+                    "Menyiapkan alat dan bahan.",
+                    "Membersihkan motherboard bekas dari debu.",
+                    "Memastikan motherboard aman dari bagian tajam.",
+                    "Menentukan titik tengah motherboard untuk lubang mesin jam.",
+                    "Melubangi bagian tengah motherboard.",
+                    "Memasang mesin jam di bagian belakang dan jarum jam di depan.",
+                    "Memasang baterai, mengatur waktu, dan memasang pengait gantungan."
+                ]
+            },
+            {
+                title: "Hiasan Meja dari RAM Komputer Bekas",
+                desc: "Memanfaatkan komponen RAM komputer bekas yang dirangkai dan ditempel pada alas kayu menjadi dekorasi meja bertema teknologi.",
+                tools: "Tang, Penggaris, Lem tembak",
+                materials: "RAM komputer bekas, Alas kayu bekas, Lem stik, Cat dekorasi",
+                cost: "Rp20.000",
+                price: "Rp35.000",
+                steps: [
+                    "Menyiapkan alat dan bahan.",
+                    "Membersihkan RAM komputer bekas dari debu.",
+                    "Menyiapkan alas kayu sebagai dudukan.",
+                    "Menata RAM sesuai bentuk desain yang diinginkan.",
+                    "Merekatkan RAM serta alas kayu menggunakan lem tembak.",
+                    "Memeriksa kerapian dan kestabilan hiasan meja"
+                ]
+            }
+        ];
+
+        function showDetails(index, cardElement) {
+            const cards = document.querySelectorAll('.gallery-card');
+            cards.forEach(c => c.classList.remove('active'));
+
+            cardElement.classList.add('active');
+
+            const data = productsData[index];
+
+            document.getElementById('productTitle').innerText = data.title;
+            document.getElementById('productDesc').innerText = data.desc;
+            document.getElementById('productTools').innerText = data.tools;
+            document.getElementById('productMaterials').innerText = data.materials;
+            document.getElementById('productPrice').innerText = `Total Biaya Bahan: ${data.cost} | Estimasi Harga Jual: ${data.price}`;
+
+            const stepsContainer = document.getElementById('productSteps');
+            stepsContainer.innerHTML = '';
+            data.steps.forEach(step => {
+                const li = document.createElement('li');
+                li.innerText = step;
+                stepsContainer.appendChild(li);
+            });
+
+            const panel = document.getElementById('descPanel');
+            document.getElementById('detailGrid').style.display = 'grid';
+            panel.classList.add('active');
+            panel.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

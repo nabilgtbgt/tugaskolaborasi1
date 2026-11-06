@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahasa Inggris - Isu Lingkungan</title>
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="inggris.css">
+</head>
+<body>
+
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Navigasi Kanan</title>
+    <link rel="stylesheet" href="inggris.css">
+</head>
+<body>
+
+    <!-- Header dengan Navigasi di Sebelah Kanan -->
+   
+
+</body>
+</html>
+
+
+    <div class="card">
+        <h1 class="card-title">Bahasa Inggris</h1>
+        <p class="card-subtitle">Membuat text Explanation tentang produk pemanfaatan barang  bekas.</p>
+
+        <div class="student-list">
+            
+            <!-- Siswa 1 -->
+            <div class="student-item" id="student-1">
+                <div class="student-header">
+                    <div class="student-info">
+                        <div class="icon-toggle" onclick="toggleText(1)">+</div>
+                        <span class="sub-label">Laporan observasi</span>
+                        <span class="student-name">Chelsea Zahra</span>
+                    </div>
+                    <button class="toggle-btn" onclick="toggleText(1)">Baca tulisan</button>
+                </div>
+                
+                <!-- Teks Esai / Report Text -->
+                <div class="text-content">
+
+                    <p>Paragraph 1 – General Statement
+Waste management is a major challenge in modern spaces, as traditional bins often cause hygiene issues because users must touch the lids directly. To solve this, technology has introduced the smart trash bin, an innovative device equipped with sensors and automated mechanisms designed to make waste disposal more hygienic, efficient, and convenient.
+
+Paragraph 2 – The Automatic Process and Monitoring
+The operation begins when a user approaches the bin, where an integrated motion sensor detects movement within a specific range and sends a signal to open the lid automatically without any physical contact. Inside the bin, capacity sensors monitor the waste fill level in real-time, and when it reaches maximum capacity, LED indicators or notifications alert the user while deodorizing systems help neutralize unpleasant odors.
+
+Paragraph 3 – The Result and Its Impact
+As a result, the smart trash bin transforms traditional waste disposal into a touchless, highly sanitary experience that prevents overflow and minimizes the spread of germs. By improving daily sanitation and promoting efficient waste handling, this technology provides an effective step toward creating a cleaner and healthier living environment.</p>
+                </div>
+            </div>
+
+            <!-- Siswa 2 -->
+            <div class="student-item" id="student-2">
+                <div class="student-header">
+                    <div class="student-info">
+                        <div class="icon-toggle" onclick="toggleText(2)">+</div>
+                        <span class="sub-label">Laporan observasi</span>
+                        <span class="student-name">Nabil Aransha  H</span>
+                    </div>
+                    <button class="toggle-btn" onclick="toggleText(2)">Baca tulisan</button>
+                </div>
+                
+                <!-- Teks Esai / Report Text -->
+                <div class="text-content">
+                       .card-1 { background-image: url('produk.jpeg'); }
+                    <p>Paragraph 1 – General Statement
+Modern technology has revolutionized everyday household items, including the traditional garbage can. Traditional bins often accumulate dangerous bacteria and spread unpleasant smells throughout the room when opened manually. To overcome these problems, the smart trash bin was invented as an automated waste management tool that enhances personal hygiene and keeps indoor environments clean.
+
+Paragraph 2 – The Operation and Odor Control Process
+The bin operates using an infrared sensor located on the front panel that constantly scans for hands or objects nearby. Once a hand is detected above the lid, the internal circuit triggers a motorized hinge to open the cover instantly without physical touch. Inside the container, an active carbon filter and built-in UV sterilizer work automatically to eliminate airborne bacteria and neutralize foul smells before the lid closes back down after a few seconds.
+
+Paragraph 3 – The Result and Its Impact
+In conclusion, the smart trash bin makes disposing of garbage completely hands-free while maintaining a fresh atmosphere. By stopping the cross-contamination of germs and controlling odors automatically, this modern device provides an essential upgrade for maintaining healthier home and office spaces.</p>
+                </div>
+            </div>
+
+            <!-- Siswa 3 -->
+            <div class="student-item" id="student-3">
+                <div class="student-header">
+                    <div class="student-info">
+                        <div class="icon-toggle" onclick="toggleText(3)">+</div>
+                        <span class="sub-label">Laporan observasi</span>
+                        <span class="student-name">Noval Arif Setiyadi</span>
+                    </div>
+                    <button class="toggle-btn" onclick="toggleText(3)">Baca tulisan</button>
+                </div>
+                
+                <!-- Teks Esai / Report Text -->
+                <div class="text-content">
+                    <p>Paragraph 1 – General Statement
+Maintaining a clean living area often becomes difficult when trash bins overflow quickly and require frequent manual handling. To address this efficiency issue, smart trash bins have been created with advanced electronic components. These modern devices serve as an intelligent solution designed to optimize waste storage and simplify daily sanitation routines.
+
+Paragraph 2 – The Compacting and Sorting Mechanism
+When a person approaches the device, proximity sensors detect the presence and immediately lift the top lid using a small electric motor. Once waste is dropped inside, internal sensors categorize the material and activate an automatic trash compactor mechanism. This internal press compresses the garbage downward, which dramatically increases the overall capacity of the bin before a full-indicator light turns on to notify the user.
+
+Paragraph 3 – The Result and Its Impact
+Ultimately, this smart technology transforms standard waste disposal into an automated and space-efficient system. By compacting waste automatically and limiting physical contact, the smart trash bin reduces the frequency of trash bag replacements and supports a more modern, hygienic lifestyle.</p>
+
+        </div>
+    </div>
+
+    <!-- Script JavaScript untuk Fitur Buka/Tutup Tulisan -->
+    <script>
+        function toggleText(id) {
+            const item = document.getElementById(`student-${id}`);
+            const btn = item.querySelector('.toggle-btn');
+            const icon = item.querySelector('.icon-toggle');
+
+            // Cek apakah item sedang terbuka
+            if (item.classList.contains('active')) {
+                item.classList.remove('active');
+                btn.textContent = 'Baca tulisan';
+                icon.textContent = '+';
+            } else {
+                item.classList.add('active');
+                btn.textContent = 'Tutup tulisan';
+                icon.textContent = '−';
+            }
+        }
+    </script>
+</body>
+</html>
